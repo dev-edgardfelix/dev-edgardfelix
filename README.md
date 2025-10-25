@@ -36,4 +36,3 @@
 ##
 
 ![snake gif](https://github.com/dev-edgardfelix/dev-edgardfelix/blob/output/github-contribution-grid-snake-dark.svg)
-

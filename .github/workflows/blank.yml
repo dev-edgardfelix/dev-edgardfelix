@@ -1,50 +1,35 @@
-# 🐍 GitHub Action: Cobra de Contribuições (Tema Dark)
-# Gera automaticamente o gráfico animado da cobrinha no perfil do GitHub
-
 name: Generate Snake (Dark Mode)
 
 on:
   schedule:
-    # Executa a cada 12 horas
-    - cron: "0 */12 * * *"
-
-  # Permite rodar manualmente em "Actions" > "Run workflow"
+    - cron: "0 */12 * * *"  # a cada 12h
   workflow_dispatch:
-
-  # Roda também quando fizer push na branch main
   push:
     branches:
       - main
 
 jobs:
   build:
+    name: Build Snake Animation
     runs-on: ubuntu-latest
 
     steps:
       - name: 🧩 Clonar repositório
         uses: actions/checkout@v3
-    
-      - name: 🐍 Gerar arquivos da cobrinha (tema dark)
-        uses: Platane/snk@v3
-        id: snake-gif
+
+      - name: 🐍 Gerar cobrinha (modo dark)
+        uses: Platane/snk/svg-only@v3
         with:
           github_user_name: dev-edgardfelix
-          outputs: |
-            dist/github-contribution-grid-snake-dark.svg
-            dist/github-contribution-grid-snake-dark.gif
-          # paleta github-dark para fundo escuro
+          outputs: dist/github-contribution-grid-snake-dark.svg
           palette: github-dark
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: ✅ Verificar status da build
-        run: git status
-
-      - name: 🚀 Enviar novos arquivos para o branch "output"
-        uses: crazy-max/ghaction-github-pages@v3.1.0
+      - name: 🚀 Enviar arquivos para o branch output
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          target_branch: output
-          build_dir: dist
-          commit_message: "Update dark snake animation"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: output
+          publish_dir: dist
+          commit_message: "Atualiza cobrinha dark 🐍"

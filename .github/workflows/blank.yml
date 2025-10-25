@@ -1,5 +1,5 @@
-# GitHub Action para gerar o gráfico de contribuições com a cobrinha com tema DARK
-# 🐍 Inspirado em Platane/snk
+# 🐍 GitHub Action: Cobra de Contribuições (Tema Dark)
+# Gera automaticamente o gráfico animado da cobrinha no perfil do GitHub
 
 name: Generate Snake (Dark Mode)
 
@@ -8,8 +8,10 @@ on:
     # Executa a cada 12 horas
     - cron: "0 */12 * * *"
 
+  # Permite rodar manualmente em "Actions" > "Run workflow"
   workflow_dispatch:
 
+  # Roda também quando fizer push na branch main
   push:
     branches:
       - main
@@ -22,14 +24,16 @@ jobs:
       - name: 🧩 Clonar repositório
         uses: actions/checkout@v3
     
-      - name: 🐍 Gerar arquivos da cobrinha (modo dark)
+      - name: 🐍 Gerar arquivos da cobrinha (tema dark)
         uses: Platane/snk@v3
         id: snake-gif
         with:
-          github_user_name: ${{ github.repository_owner }}
+          github_user_name: dev-edgardfelix
           outputs: |
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-            dist/github-contribution-grid-snake-dark.gif?palette=github-dark
+            dist/github-contribution-grid-snake-dark.svg
+            dist/github-contribution-grid-snake-dark.gif
+          # paleta github-dark para fundo escuro
+          palette: github-dark
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

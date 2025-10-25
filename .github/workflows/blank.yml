@@ -1,8 +1,11 @@
+# 🐍 GitHub Action - Cobrinha de contribuições (Dark Mode)
+# Inspirado em Platane/snk
+
 name: Generate Snake (Dark Mode)
 
 on:
   schedule:
-    - cron: "0 */12 * * *"  # a cada 12h
+    - cron: "0 */12 * * *"  # Executa a cada 12 horas
   workflow_dispatch:
   push:
     branches:
@@ -18,15 +21,15 @@ jobs:
         uses: actions/checkout@v3
 
       - name: 🐍 Gerar cobrinha (modo dark)
-        uses: Platane/snk/svg-only@v3
+        uses: Platane/snk@v3
         with:
           github_user_name: dev-edgardfelix
-          outputs: dist/github-contribution-grid-snake-dark.svg
-          palette: github-dark
+          outputs: |
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: 🚀 Enviar arquivos para o branch output
+      - name: 🚀 Publicar no branch "output"
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}

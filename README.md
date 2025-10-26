@@ -34,7 +34,7 @@
   <a href="https://www.linkedin.com/in/edgard-felix" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
 </div>
 
-##
+## Minhas contribuições no Github de forma dinâmica. Famosa "cobrinha" hahaha!
 
 ![snake gif](https://github.com/dev-edgardfelix/dev-edgardfelix/blob/output/github-contribution-grid-snake.svg)
 

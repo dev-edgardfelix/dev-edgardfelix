@@ -1,6 +1,6 @@
 ## Olá! Eu sou Edgard Felix 😁👍
 
--👨‍💻Desenvolvedor Front-End (me especializando em Full-Stack) <br>
+-👨‍💻Engenheiro de Software (Software Enginner)<br>
 -✡️Estudando React.Js <br>
 -🟩Estudando Node.Js <br>
 -✈️Profissional em transição de carreira (de funcionário público à programador) <br>

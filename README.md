@@ -36,6 +36,10 @@
 
 ## Minhas contribuições no Github de forma dinâmica. Famosa "cobrinha" hahaha!
 
-![snake gif](https://github.com/dev-edgardfelix/dev-edgardfelix/blob/output/github-contribution-grid-snake.svg)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dev-edgardfelix/dev-edgardfelix/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dev-edgardfelix/dev-edgardfelix/output/github-contribution-grid-snake.svg" />
+  <img alt="Snake eating my GitHub contributions" src="https://raw.githubusercontent.com/dev-edgardfelix/dev-edgardfelix/output/github-contribution-grid-snake.svg" />
+</picture>
 
 

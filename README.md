@@ -7,8 +7,7 @@
 -💫Seja bem vindo ao meu perfil do GitHub!
 
 <p align="center">
-  <img height="160em" src="https://github-readme-stats-git-masterorgs-github-readme-stats-team.vercel.app/api?username=dev-edgardfelix&show_icons=true&theme=dark
-"/>
+  <img height="160em" src="https://github-readme-stats.vercel.app/api?username=dev-edgardfelix&show_icons=true&theme=dark&cache_seconds=7200&locale=pt-br"/>
   <img height="160em" src="https://github-readme-stats-git-masterorgs-github-readme-stats-team.vercel.app/api?username=dev-edgardfelix&show_icons=true&theme=dark
 "/>
 </p>

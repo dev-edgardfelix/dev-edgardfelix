@@ -6,10 +6,10 @@
 -✈️Profissional em transição de carreira (de funcionário público à programador) <br>
 -💫Seja bem vindo ao meu perfil do GitHub!
 
-<div>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=dev-edgardfelix&show_icons=true&theme=dark"/> 
-  <img height="180em" width="350em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dev-edgardfelix&layout=donut&theme=dark"/>
-</div>
+<p align="center">
+  <img height="160em" src="https://github-readme-stats.vercel.app/api?username=dev-edgardfelix&show_icons=true&theme=dark" />
+  <img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dev-edgardfelix&layout=compact&theme=dark" />
+</p>
 
 <div style="display: inline_block"><br>
   <img align="center" alt="HTML" height="50" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg">
